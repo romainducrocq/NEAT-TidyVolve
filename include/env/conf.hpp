@@ -16,7 +16,6 @@ struct DefaultConf{
 
     /*** DEC ACTIONS HERE */
     enum Action{
-        ZERO, ONE
     };
 
     const static size_t INPUTS;
@@ -77,7 +76,7 @@ struct DefaultConf{
                 default :
                     std::cerr << "usage: apps/exec [-h] [-m MOD] [-g GEN] [-e EPO] [-n NUM] [-p PLT] [-s SAV] \n";
                     std::cerr << "\n";
-                    std::cerr << "NEAT XOR                                                                    \n";
+                    std::cerr << "TidyVolve                                                                   \n";
                     std::cerr << "\n";
                     std::cerr << "optional args:                                                              \n";
                     std::cerr << "  -h      Print help and exit                                               \n";
@@ -200,7 +199,7 @@ size_t DefaultConf<T>::GENERATIONS_TRAIN = 300; // (0=inf) -> infinite train
 template<typename T>
 size_t DefaultConf<T>::EPOCHS_EVAL = 10; // (0=inf) -> infinite eval
 template<typename T>
-size_t DefaultConf<T>::MAX_STEP = 0; // (0=inf) -> no step early stop
+size_t DefaultConf<T>::MAX_STEP = 1; // (0=inf) -> no step early stop
 
 /*** DEF OPT PARAMS HERE */
 
