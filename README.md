@@ -53,7 +53,7 @@ or `./play.sh`
 or `./test.sh`  
 
 ```
-usage: apps/exec [-h] [-m MOD] [-g GEN] [-e EPO] [-n NUM] [-p PLT] [-s SAV]
+usage: apps/exec [-h] [-m MOD] [-g GEN] [-e EPO] [-c CNT] [-n NOP] [-p PLT] [-s SAV]
 
 TidyVolve
 
@@ -61,12 +61,13 @@ optional args:
   -h      Print help and exit
   -m MOD  Set mode < train | eval | play | test >
   params:
-  -g GEN  [train]       Set generation number (0=inf)
-  -e EPO  [eval, play]  Set epoch number      (0=inf)
-  -n NUM  [train, eval] Set max step number   (0=inf)
+  -g GEN  [train]       Set number generation (0=inf)
+  -e EPO  [eval, play]  Set number epoch      (0=inf)
+  -c CNT  [train, eval] Set number max step   (0=inf)
+  -n NOP  [train, eval] Set number max noop   (0=inf)
   utils:
-  -p PLT  [train]       Set plot log file name
-  -s SAV  [train, eval] Set save sav file name
+  -p PLT  [train]       Set file name plot plt
+  -s SAV  [train, eval] Set file name save sav
 ```
 > Hyperparameter configuration file: `include/env/conf.hpp`
 
@@ -184,12 +185,12 @@ POPULATION_GENS_INC  = 200
 POPULATION_INC_FREQ  = 10
 
 ACT_REPEAT           = 1
-MAX_NOOP             = 30
-MVG_AVG              = 20
+MVG_AVG              = 100
 
 GENERATIONS_TRAIN    = 300
 EPOCHS_EVAL          = 10
 MAX_STEP             = 1000
+MAX_NOOP             = 30
 ```
 
 @romainducrocq
