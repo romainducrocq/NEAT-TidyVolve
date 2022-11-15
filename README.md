@@ -1,5 +1,5 @@
 # [C++] Topologies I Dunno Yet, eVolve
-## > TidyVolve: My very own NEAT framework in C++ (by & for myself) <
+## > TidyVolve: My very own NEAT framework in C++ (it's neat & tidy) <
 
 - The NeuroEvolution of Augmenting Topologies (NEAT) User Page: http://www.cs.ucf.edu/~kstanley/neat.html
 - MarI/O - Machine Learning for Video Games (SethBling): https://www.youtube.com/watch?v=qv6UVOQ0F44 
@@ -170,7 +170,7 @@ MUTATE_NEURON_RATE   = 0.5f
 MUTATE_ENABLE_RATE   = 0.2f
 MUTATE_DISABLE_RATE  = 0.4f
 MUTATE_OFFSET_SIZE   = 0.1f
-MUTATE_RATE_DECAY    = 0.f
+MUTATE_RATE_DECAY    = 0.995f
 
 DELTA_DISJOINT       = 2.f
 DELTA_WEIGHTS        = 0.4f
@@ -183,13 +183,13 @@ MAX_POPULATION_SIZE  = 150
 POPULATION_GENS_INC  = 200
 POPULATION_INC_FREQ  = 10
 
-ACT_REPEAT           = 0
-MAX_NOOP             = 0
+ACT_REPEAT           = 1
+MAX_NOOP             = 30
 MVG_AVG              = 20
 
 GENERATIONS_TRAIN    = 300
 EPOCHS_EVAL          = 10
-MAX_STEP             = 0
+MAX_STEP             = 1000
 ```
 
 @romainducrocq
