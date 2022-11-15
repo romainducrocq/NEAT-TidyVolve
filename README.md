@@ -81,6 +81,11 @@ optional args:
 
 Time: 1049.4ms
 
+log/plots/
+
+```
+
+```
 -------------------------------EVAL--------------------------------
 
 Time: 0.309975ms
@@ -151,6 +156,7 @@ Time: 0.309975ms
 
 ```
 HYPERPARAMETERS DEFAULT VALUES:
+
 
 INPUTS               = 2
 OUTPUTS              = 1
