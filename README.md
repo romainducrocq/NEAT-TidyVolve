@@ -6,13 +6,13 @@
 
 ****
 
-## Eg.
+## Examples
 
 - NEAT XOR: https://github.com/romainducrocq/NEAT-XOR
 
 ****
 
-## Run
+## How to _
 
 `cd bin`
 - **Install**: `./make.sh` or  
