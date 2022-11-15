@@ -6,6 +6,12 @@
 
 ****
 
+## Examples
+
+- NEAT-XOR: https://github.com/romainducrocq/NEAT-XOR
+
+****
+
 ## Run
 
 `cd bin`
@@ -68,6 +74,18 @@ optional args:
 
 ## Demo
 
-- NEAT-XOR: https://github.com/romainducrocq/NEAT-XOR
+```
+-------------------------------TRAIN-------------------------------
+
+Time: 1049.4ms
+
+-------------------------------EVAL--------------------------------
+
+Time: 0.309975ms
+```
+
+****
+
+## Docs
 
 @romainducrocq
