@@ -6,9 +6,9 @@
 
 ****
 
-## Examples
+## Eg.
 
-- NEAT-XOR: https://github.com/romainducrocq/NEAT-XOR
+- NEAT XOR: https://github.com/romainducrocq/NEAT-XOR
 
 ****
 
