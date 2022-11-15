@@ -189,7 +189,7 @@ MVG_AVG              = 100
 
 GENERATIONS_TRAIN    = 300
 EPOCHS_EVAL          = 10
-MAX_STEP             = 1000
+MAX_STEP             = 500
 MAX_NOOP             = 30
 ```
 
