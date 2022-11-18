@@ -6,10 +6,7 @@
 #include "utils/logger.hpp"
 
 /*** ADD INCLUDE HERE */
-#include <iostream>
-#include <cmath>
 
-#include "env/env/xor.hpp"
 
 namespace App { class Play; }
 
@@ -18,7 +15,6 @@ namespace MyEnv
     /*** DEC MODEL HERE */
     struct Model
     {
-        Xor agent;
     };
 
     class Env : public Neat

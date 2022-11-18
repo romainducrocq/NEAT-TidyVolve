@@ -10,9 +10,7 @@
 #include "utils/logger.hpp"
 
 /*** ADD INCLUDE HERE */
-#include <iostream>
 
-#include "env/env/xor.hpp"
 
 namespace View
 {
@@ -22,7 +20,6 @@ namespace View
             /*** DEC EVENT STATE HERE */
             struct EventState
             {
-                CONF::Action action = CONF::ZERO;
             };
 
         private:

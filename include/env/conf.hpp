@@ -4,9 +4,9 @@
 /*** DEF DEFAULT ARGS HERE */
 /*
  * TRAIN
-   -g 300 -t 0 -n 0 -p plt -s sav
+   -g 300 -t 1 -n 0 -p plt -s sav
  * EVAL
-   -e 10 -t 0 -n 0 -s sav
+   -e 10 -t 1 -n 0 -s sav
  * PLAY
    -e 10
  * TEST
@@ -28,7 +28,6 @@ struct DefaultConf{
 
     /*** DEC ACTIONS HERE */
     enum Action{
-        ZERO, ONE
     };
 
     const static size_t INPUTS;
@@ -91,7 +90,7 @@ struct DefaultConf{
                 default :
                     std::cerr << "usage: apps/exec [-h] [-m MOD] [-g GEN] [-e EPO] [-t STP] [-n NOP] [-p PLT] [-s SAV] \n";
                     std::cerr << "\n";
-                    std::cerr << "NEAT XOR                                                                             \n";
+                    std::cerr << "TidyVolve                                                                             \n";
                     std::cerr << "\n";
                     std::cerr << "optional args:                                                                       \n";
                     std::cerr << "  -h      Print help and exit                                                        \n";
