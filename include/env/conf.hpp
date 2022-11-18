@@ -1,6 +1,18 @@
 #ifndef _ENV_CONF_HPP
 #define _ENV_CONF_HPP
 
+/*** DEF DEFAULT ARGS HERE */
+/*
+ * TRAIN
+   -g 300 -t 0 -n 0 -p plt -s sav
+ * EVAL
+   -e 10 -t 0 -n 0 -s sav
+ * PLAY
+   -e 10
+ * TEST
+
+*/
+
 #include <unistd.h>
 
 #include <iostream>
@@ -16,6 +28,7 @@ struct DefaultConf{
 
     /*** DEC ACTIONS HERE */
     enum Action{
+        ZERO, ONE
     };
 
     const static size_t INPUTS;
@@ -46,6 +59,8 @@ struct DefaultConf{
 
     const static size_t ACT_REPEAT;
     const static size_t MVG_AVG;
+    const static size_t PLT_FREQ;
+    const static size_t SAV_FREQ;
 
     static size_t GENERATIONS_TRAIN;
     static size_t EPOCHS_EVAL;
@@ -65,7 +80,7 @@ struct DefaultConf{
         // https://github.com/gnif/LookingGlass/blob/c0c63fd93bf999b6601a782fec8b56e9133388cc/client/main.c#L1391
 
         /*** DEF CMDS HERE */
-        const char cmds[] = "h:m:g:e:c:n:p:s:";
+        const char cmds[] = "h:m:g:e:t:n:p:s:";
 
         for(;;){
             switch(getopt(argc, argv, cmds)){
@@ -74,9 +89,9 @@ struct DefaultConf{
                 case '?': // help
                 case 'h':
                 default :
-                    std::cerr << "usage: apps/exec [-h] [-m MOD] [-g GEN] [-e EPO] [-c CNT] [-n NOP] [-p PLT] [-s SAV] \n";
+                    std::cerr << "usage: apps/exec [-h] [-m MOD] [-g GEN] [-e EPO] [-t STP] [-n NOP] [-p PLT] [-s SAV] \n";
                     std::cerr << "\n";
-                    std::cerr << "TidyVolve                                                                            \n";
+                    std::cerr << "NEAT XOR                                                                             \n";
                     std::cerr << "\n";
                     std::cerr << "optional args:                                                                       \n";
                     std::cerr << "  -h      Print help and exit                                                        \n";
@@ -84,7 +99,7 @@ struct DefaultConf{
                     std::cerr << "  params:                                                                            \n";
                     std::cerr << "  -g GEN  [train]       Set number generation (0=inf)                                \n";
                     std::cerr << "  -e EPO  [eval, play]  Set number epoch      (0=inf)                                \n";
-                    std::cerr << "  -c CNT  [train, eval] Set number max step   (0=inf)                                \n";
+                    std::cerr << "  -t STP  [train, eval] Set number max step   (0=inf)                                \n";
                     std::cerr << "  -n NOP  [train, eval] Set number max noop   (0=inf)                                \n";
                     std::cerr << "  utils:                                                                             \n";
                     std::cerr << "  -p PLT  [train]       Set file name plot plt                                       \n";
@@ -115,7 +130,7 @@ struct DefaultConf{
                     DefaultConf<T>::EPOCHS_EVAL = static_cast<size_t>(std::atoi(optarg));
                     continue;
 
-                case 'c': // number max step
+                case 't': // number max step
                     DefaultConf<T>::MAX_STEP = static_cast<size_t>(std::atoi(optarg));
                     continue;
 
@@ -196,13 +211,17 @@ template<typename T>
 const size_t DefaultConf<T>::ACT_REPEAT = 0;
 template<typename T>
 const size_t DefaultConf<T>::MVG_AVG = 100;
+template<typename T>
+const size_t DefaultConf<T>::PLT_FREQ = 0; // (0=false) -> plot at end train only
+template<typename T>
+const size_t DefaultConf<T>::SAV_FREQ = 1; // (0=false) -> save at end train only
 
 template<typename T>
 size_t DefaultConf<T>::GENERATIONS_TRAIN = 300; // (0=inf) -> infinite train
 template<typename T>
 size_t DefaultConf<T>::EPOCHS_EVAL = 10; // (0=inf) -> infinite eval
 template<typename T>
-size_t DefaultConf<T>::MAX_STEP = 1; // (0=inf) -> no step early stop
+size_t DefaultConf<T>::MAX_STEP = 0; // (0=inf) -> no step early stop
 template<typename T>
 size_t DefaultConf<T>::MAX_NOOP = 0; // (0=inf) -> no noop early stop
 
