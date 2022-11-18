@@ -1,9 +1,17 @@
+<span id="header">
   
-# [C++] XOR PROBLEM with NEAT and TidyVolve
+# [C++] Topologies I Dunno Yet, eVolve
+## > TidyVolve: My very own NEAT framework in C++ (it's neat & tidy) <
 
-- My very own NEAT framework in C++ (it's neat & tidy) : https://github.com/romainducrocq/TidyVolve
-- NEAT-Python documentation XOR example : https://neat-python.readthedocs.io/en/latest/xor_example.html
+- The NeuroEvolution of Augmenting Topologies (NEAT) User Page: http://www.cs.ucf.edu/~kstanley/neat.html
+- MarI/O - Machine Learning for Video Games (SethBling): https://www.youtube.com/watch?v=qv6UVOQ0F44
 
+****
+
+## Examples
+
+- NEAT XOR: https://github.com/romainducrocq/NEAT-XOR
+</span>
 ****
 
 ## How to _
@@ -28,8 +36,8 @@ $ sudo cp -v lib/*.a /usr/lib
 ```
 $ ./build.sh -R
 $ ./compile.sh
-$ ./run.sh -m train -g 300 -t 1 -n 0 -p plt -s sav
-$ ./run.sh -m eval -e 10 -t 1 -n 0 -s sav
+$ ./run.sh -m train -g 300 -t 0 -n 0 -p plt -s sav
+$ ./run.sh -m eval -e 10 -t 0 -n 0 -s sav
 ```
 </span>
 
@@ -37,8 +45,8 @@ $ ./run.sh -m eval -e 10 -t 1 -n 0 -s sav
 `./train.sh [-D -R] <args>` or  
 <span id="how_to_train">
 ```
-* Debug   : $ ./train.sh -D -g 300 -t 1 -n 0 -p plt -s sav
-* Release : $ ./train.sh -R -g 300 -t 1 -n 0 -p plt -s sav
+* Debug   : $ ./train.sh -D -g 300 -t 0 -n 0 -p plt -s sav
+* Release : $ ./train.sh -R -g 300 -t 0 -n 0 -p plt -s sav
 ```
 </span>
 
@@ -46,8 +54,8 @@ $ ./run.sh -m eval -e 10 -t 1 -n 0 -s sav
 `./eval.sh [-D -R] <args>` or  
 <span id="how_to_eval">
 ```
-* Debug   : $ ./eval.sh -D -e 10 -t 1 -n 0 -s sav
-* Release : $ ./eval.sh -R -e 10 -t 1 -n 0 -s sav
+* Debug   : $ ./eval.sh -D -e 10 -t 0 -n 0 -s sav
+* Release : $ ./eval.sh -R -e 10 -t 0 -n 0 -s sav
 ```
 </span>
 
