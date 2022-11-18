@@ -1,7 +1,17 @@
+<span id="header">
+  
+# [C++] Topologies I Dunno Yet, eVolve
+## > TidyVolve : My very own NEAT framework in C++ (it's neat & tidy) <
 
-# [C++] APPLICATION with NEAT and TidyVolve
+- The NeuroEvolution of Augmenting Topologies (NEAT) User Page : http://www.cs.ucf.edu/~kstanley/neat.html
+- MarI/O - Machine Learning for Video Games (SethBling) : https://www.youtube.com/watch?v=qv6UVOQ0F44
 
-- My very own NEAT framework in C++ (it's neat & tidy) : https://github.com/romainducrocq/TidyVolve
+****
+
+## Examples
+
+- NEAT XOR : https://github.com/romainducrocq/NEAT-XOR
+</span>
   
 ****
 
