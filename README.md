@@ -3,6 +3,9 @@
 # [C++] Topologies I Dunno Yet, eVolve
 ## > TidyVolve : My very own NEAT framework in C++ (it's neat & tidy) <
 
+- My very own NEAT framework in C++ (it's neat & tidy) : [\[v1. BASE\]](https://github.com/romainducrocq/NEAT-TidyVolve) - [\[v2. SFML\]](https://github.com/romainducrocq/NEAT-TidyV2fml) - [\[v3. EMUL\]](https://github.com/romainducrocq/NEAT-TidyV3mul)
+<!---->
+  
 - The NeuroEvolution of Augmenting Topologies (NEAT) User Page : http://www.cs.ucf.edu/~kstanley/neat.html
 - MarI/O - Machine Learning for Video Games (SethBling) : https://www.youtube.com/watch?v=qv6UVOQ0F44
 
