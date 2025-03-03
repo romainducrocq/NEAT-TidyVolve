@@ -1,9 +1,9 @@
 <span id="header">
   
-# [C++] Topologies I Dunno Yet, eVolve
+# NEAT - Topologies I Dunno Yet, eVolve
 ## > TidyVolve : My very own NEAT framework in C++ (it's neat & tidy)
 
-- My very own NEAT framework in C++ (it's neat and tidy) : [\[v1. BASE\]](https://github.com/romainducrocq/NEAT-TidyVolve) - [\[v2. SFML\]](https://github.com/romainducrocq/NEAT-TidyV2fml) - [\[v3. EMUL\]](https://github.com/romainducrocq/NEAT-TidyV3mul)
+- My very own NEAT framework in C++ (it's neat & tidy) : [\[v1. BASE\]](https://github.com/romainducrocq/NEAT-TidyVolve) - [\[v2. SFML\]](https://github.com/romainducrocq/NEAT-TidyV2fml) - [\[v3. EMUL\]](https://github.com/romainducrocq/NEAT-TidyV3mul)
 <!---->
   
 - The NeuroEvolution of Augmenting Topologies (NEAT) User Page : http://www.cs.ucf.edu/~kstanley/neat.html
